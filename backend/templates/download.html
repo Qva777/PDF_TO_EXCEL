@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Detail</title>
+</head>
+<body>
+    <h1>File Detail</h1>
+
+    {% if uploaded_file.converted_file %}
+    <p>Converted File: <a href="{{ uploaded_file.converted_file.url }}">{{ uploaded_file.converted_file.name }}</a></p>
+    <form action="{% url 'upload_file' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Upload Another File</button>
+    </form>
+    <!-- Добавление кнопки для скачивания эксель файла -->
+    <form action="{% url 'download_excel' uploaded_file.pk %}" method="get">
+        <button type="submit">Download Excel</button>
+    </form>
+    {% endif %}
+</body>
+</html>
