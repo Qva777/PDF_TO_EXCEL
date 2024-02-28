@@ -10,7 +10,7 @@
 
 <h3>Register on site and get <a href="https://pdftables.com/pdf-to-excel-api">API key</a></h3>
 
-<h3>Create Your .env and set correct values:</h3>
+<h3>Insert this command into cmd/terminal (in .env file set correct values):</h3>
 
 ```
 cd backend/
@@ -34,6 +34,7 @@ PGADMIN_DEFAULT_PASSWORD=root
 # https://pdftables.com/pdf-to-excel-api
 API_PDF_TABLES=api_key_pdf
 EOL
+mkdir converted_files
 cd ..
 ```
 
