@@ -2,12 +2,13 @@ FROM python:3.11
 
 WORKDIR /app
 
+COPY ./requirements.txt /app/requirements.txt
+
+RUN apt-get update && apt-get install -y netcat-openbsd \
+    && pip install --upgrade pip \
+    && pip install -r requirements.txt
+
 COPY . /app
-
-RUN apt-get update && apt-get install -y netcat-openbsd
-
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
 
 EXPOSE 8000
 

@@ -13,9 +13,8 @@
         {% csrf_token %}
         <button type="submit">Upload Another File</button>
     </form>
-    <!-- Добавление кнопки для скачивания эксель файла -->
     <form action="{% url 'download_excel' uploaded_file.pk %}" method="get">
-        <button type="submit">Download Excel</button>
+        <button type="submit">Download</button>
     </form>
     {% endif %}
 </body>

@@ -2,13 +2,16 @@
 
 <h1>📍How to install: </h1>
 
+> ❗ONLY SUITABLE FOR CERTAIN TYPES OF PDF❗
+>
 >This tool provides a straightforward and efficient way to extract
->data from PDF documents and transform it into a structured Excel format. 
+> data from PDF documents and transform it into a structured Excel format.
 
 <!-- DOCKER -->
 <details><summary><h2>🐳Connect to Docker Compose:</h2></summary><br/>
 
-<h3>Register on site and get <a href="https://pdftables.com/pdf-to-excel-api">API key</a></h3>
+<h3>Sign up for an account at [PDFTables.com](https://pdftables.com/) and then visit the
+[API page](https://pdftables.com/pdf-to-excel-api) to see your API key.</h3>
 
 <h3>Insert this command into cmd/terminal (in .env file set correct values):</h3>
 
